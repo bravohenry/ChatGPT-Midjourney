@@ -136,14 +136,6 @@ export function SideBar(props: { className?: string }) {
           onClick={() => navigate(Path.NewChat, { state: { fromHome: true } })}
           shadow
         />
-        <IconButton
-          icon={<GemIcon />}
-          text={shouldNarrow ? undefined : "Pro"}
-          className={styles["sidebar-bar-button"]}
-          onClick={() => window.open(REPO_URL + "-Pro", "_blank")}
-          shadow
-        />
-      </div>
 
       <div
         className={styles["sidebar-body"]}
